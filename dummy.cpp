@@ -11,6 +11,7 @@
 
 auto density_mean(std::vector<float> input)
 {
+    // adding some comment for test
     std::transform(std::begin(input), std::end(input), std::begin(input), [](float f) { return -f; });
     std::sort(std::begin(input), std::end(input));
     std::transform(std::begin(input), std::end(input), std::begin(input), [](float f) { return std::log(-f); });
